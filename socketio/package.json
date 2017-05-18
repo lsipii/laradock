@@ -1,0 +1,17 @@
+{
+  "name": "docker_aarium_websocket",
+  "version": "1.0.0",
+  "description": "Aarium SocketIO on Docker",
+  "author": "Lassi Piironen <lassi@aarium.com>",
+  "repository": "aarium",
+  "license":"MIT",
+  "main": "socket.js",
+  "scripts": {
+    "start": "node socket.js"
+  },
+  "dependencies": {
+    "express": "^4.14.0",
+    "ioredis": "^2.4.0",
+    "socketio": "^1.0.0" 
+  }
+}
