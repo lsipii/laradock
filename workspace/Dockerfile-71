@@ -510,7 +510,25 @@ RUN if [ ${INSTALL_SYMFONY} = true ]; then \
 
 ;fi
 
+#####################################
+# Install MySQL Client:
+#####################################
+USER root
+RUN cd / && \
+apt-get update -yqq && \
+apt-get install -y --force-yes mysql-client
+
+#####################################
+# Imagick:
+#####################################
+RUN apt-get -y update && \
+    apt-get install pkg-config imagemagick libmagickwand-dev -y && \
+    pecl install imagick \
+    && echo "extension=imagick.so" >> /etc/php/7.1/cli/php.ini
+    
 USER laradock
+
+
 
 #
 #--------------------------------------------------------------------------
