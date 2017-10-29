@@ -239,6 +239,10 @@ CADDY_HOST_HTTPS_PORT=443
 CADDY_HOST_LOG_PATH=./logs/caddy
 CADDY_CUSTOM_CADDYFILE=./caddy/Caddyfile
 
+### AARIUM SOCKETIO ##############################################################################################################
+
+SOCKETIO_NONSSL_PORT=3000
+SOCKETIO_SSL_PORT=3200
 
 ##### TO BE CONTINUE .................................
 
